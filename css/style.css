@@ -60,7 +60,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 730px){
+@media screen and (max-width: 730px) {
   .nav-bar {
     padding: 1.5rem 4rem;
   }
@@ -68,23 +68,23 @@ header {
   .nav-item {
     display: none;
   }
-  
+
   .login-botao {
     display: none;
   }
 
   .mobile-menu-icon {
-    display:block
+    display: block;
   }
 
   .mobile-menu-icon button {
     background-color: transparent;
-    border:none;
+    border: none;
     cursor: pointer;
   }
 
   .mobile-menu ul {
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
@@ -92,7 +92,7 @@ header {
 
   .mobile-menu .nav-item {
     display: block;
-    padding-top: 1.2rem ;
+    padding-top: 1.2rem;
   }
 
   .mobile-menu .login-botao {
@@ -109,3 +109,33 @@ header {
   }
 }
 
+.azul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /*1 topo 2 direita 3 baixo 4 esquerda*/
+  margin: 5% 10% 10% 10%;
+}
+.vermelho {
+  width: 50%;
+}
+.imagem {
+  border: #ffd900 solid 5px;
+}
+
+.laranja h1 {
+  font-size: 60px;
+}
+
+.laranja p {
+  font-size: 20px;
+}
+
+.laranja button {
+  background-color: #ffd900;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: ;
+
+}
