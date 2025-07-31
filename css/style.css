@@ -60,7 +60,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1043px) {
   .nav-bar {
     padding: 1.5rem 4rem;
   }
@@ -85,7 +85,7 @@ header {
 
   .mobile-menu ul {
     display: flex;
-    flex-direction: column;
+    margin: 0% 23%;
     text-align: center;
     padding-bottom: 1rem;
   }
@@ -136,6 +136,91 @@ header {
   border: none;
   padding: 10px;
   border-radius: 5px;
-  margin: ;
+  font-size: 20px;
+  margin: 2% 3% 0% 0%;
+}
+/* máquinas destaques*/
+.titulo-maquinas-destaques{
+  margin: 0% 10% 5% 10%;
+  background-color: #ffd900;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
+}
+.container-cards {
+  display: flex; /* Faz os cards ficarem lado a lado */
+  justify-content: space-around; /* Espalha eles na tela */
+  gap: 20px; /* Espaço entre os cards */
+  margin: 20px; /* Margem ao redor */
+  flex-wrap: wrap; /* Se não couber, empilha (para mobile) */
+}
+.maquinas-destaques {
+  flex: 1; /* Cada card ocupa o mesmo espaço */
+  max-width: 300px; /* Tamanho máximo do card */
+  min-width: 200px; /* Tamanho mínimo do card */
+}
+.maquinas-destaques {
+  background-color: #ffd900;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+  margin: 2%;
+  padding: 2%;
+}
+.maquinas-destaques h2 {
+  text-align: center;
+  font-size: 250%;
+  background-color:  rgb(44, 38, 38);
+  border-radius: 30px;
+  color: #ffd900;
+}
+.maquinas-destaques img{
+  margin: 5% 15% 0% 3% ;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.maquinas-destaques p {
+  text-align: center;
+   background-color:  rgb(44, 38, 38);
+  border-radius: 30px;
+  padding: 2px;
+  color: #ffd900;
+}
 
+.maquinas-destaques button {
+  margin: 3% 30% 3%;
+  background-color: rgb(44, 38, 38);
+  color: #ffd900;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1043px) {
+  .azul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /*1 topo 2 direita 3 baixo 4 esquerda*/
+    margin: 5% 10% 10% 10%;
+  }
+
+  .vermelho2 {
+    width: 38%;
+    margin: 5% 10% 0% 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .laranja h1 {
+    display: flex;
+    font-size: 270%;
+  }
+
+  .laranja p {
+    display: flex;
+    font-size: 120%;
+  }
 }
