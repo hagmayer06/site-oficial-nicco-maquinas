@@ -117,14 +117,22 @@ header {
   margin: 5% 10% 10% 10%;
 }
 .vermelho {
-  width: 50%;
+  width: 100%;
+  margin: 5% 2% 5% 10%;
+}
+.vermelho2 {
+  margin: 5% 0% 5% 10%;
+  
 }
 .imagem {
   border: #ffd900 solid 5px;
+  width: 400px;
 }
 
 .laranja h1 {
-  font-size: 60px;
+  font-size: 50px;
+  white-space: nowrap;
+
 }
 
 .laranja p {
@@ -164,7 +172,6 @@ header {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
-  width: 300px;
   transition: transform 0.3s ease;
   margin: 2%;
   padding: 2%;
@@ -176,17 +183,36 @@ header {
   border-radius: 30px;
   color: #ffd900;
 }
+
+.imagem-maquina {
+   padding: 4px 4px 4px 4px;
+  
+  
+}
 .maquinas-destaques img{
-  margin: 5% 15% 0% 3% ;
+ 
   border-radius: 5px;
   border: 2px solid black;
+  display: flex; /* Transforma em uma caixa flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  max-width: 100%; /* Nunca vai ser maior que o card */
+  height: auto; /* Mantém a proporção */
+  border-radius: 8px; /* Cantos arredondados (opcional) */
+
 }
 .maquinas-destaques p {
   text-align: center;
-   background-color:  rgb(44, 38, 38);
+  background-color:  rgb(44, 38, 38);
   border-radius: 30px;
   padding: 2px;
   color: #ffd900;
+  margin: 2px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+
 }
 
 .maquinas-destaques button {
@@ -196,6 +222,10 @@ header {
   border: none;
   padding: 10px;
   border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1043px) {
@@ -208,19 +238,57 @@ header {
   }
 
   .vermelho2 {
-    width: 38%;
-    margin: 5% 10% 0% 5%;
+    width: 100%;
+    margin: 5% 0% 0% 20%;
     display: flex;
     justify-content: center;
   }
 
+  .imagem {
+    width: 350px;
+    margin: 2% 60% 9% 10%;
+  }
+
   .laranja h1 {
-    display: flex;
-    font-size: 270%;
+     font-size: 270%;
   }
 
   .laranja p {
-    display: flex;
+    
     font-size: 120%;
   }
+
+  /*cards das maquinas */
+
+  .container-cards {
+  display: flex; /* Faz os cards ficarem lado a lado */
+  justify-content: space-around; /* Espalha eles na tela */
+  gap: 10px; /* Espaço entre os cards */
+  margin: 10px; /* Margem ao redor */
+  flex-wrap: wrap; /* Se não couber, empilha (para mobile) */
+}
+
+  .maquinas-destaques {
+  flex: 1; /* Cada card ocupa o mesmo espaço */
+  max-width: 200px; /* Tamanho máximo do card */
+  min-width: 100px; /* Tamanho mínimo do card */
+}
+.maquinas-destaques img{
+  margin: 5% 18% 0% 0% ;
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 100%;
+
+}
+.maquinas-destaques button {
+  margin: 3% 22% 3%;
+  background-color: rgb(44, 38, 38);
+  color: #ffd900;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+  
 }
