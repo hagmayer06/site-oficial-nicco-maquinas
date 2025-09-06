@@ -3,9 +3,12 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(44, 38, 38);
+}
 header {
   background-color: rgb(44, 38, 38);
-  box-shadow: 0px 3px 10px;
+  box-shadow: rgb(0, 0, 0) 10px 10px 70px;
 }
 
 .nav-bar {
@@ -39,18 +42,57 @@ header {
   text-decoration: none;
   font-size: 1rem;
   color: #ffd900;
+  transition: all 0.1s ease-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover {
+  border-bottom: 2px solid #ffd900;;
+  text-shadow: rgb(0, 0, 0) 6px 6px 8px;
+  font-size: 1.5rem;
+  transform: scale(1.5s);
 }
 
-.login-botao button {
+
+.login-botao {
+ 
+  background-color: transparent; 
+  box-shadow: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+
+.login-botao a {
+  display: inline-block; 
+  text-decoration: none;
+  padding: 0; 
+  margin: 0; 
   border: none;
-  background-color: #ffd900;
-  padding: 10px 15px;
-  border-radius: 10px;
+  line-height: 0; 
 }
 
-.login-botao button a {
-  width: 200px;
+
+.login-botao img {
+  display: block; 
+  width: 50px; 
+  height: auto; 
+  border: none; 
+  cursor: pointer; 
 }
+
+
+.login-botao:hover img {
+  border: none;
+  border-radius: 110%;
+  background-color: rgb(33, 30, 30);
+  box-shadow:  black 2px 7px 10px;
+  transform: scale(1.05);
+  width: 60px;
+ 
+}
+
+
+
 
 .mobile-menu-icon {
   display: none;
@@ -108,35 +150,37 @@ header {
     display: block;
   }
 }
-
+.imagem-de-fundo {
+   
+    background-repeat: no-repeat;
+    background-size: cover;     
+    background-position: center; 
+    height: 800px;            
+    width: 1351px;   
+    box-shadow: black 10px 10px 30px;            
+  }
 .azul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   /*1 topo 2 direita 3 baixo 4 esquerda*/
-  margin: 5% 10% 10% 10%;
+  margin:0px ;
+  padding: 6% 61% 20% 5%;
 }
 .vermelho {
   width: 100%;
   margin: 5% 2% 5% 10%;
 }
-.vermelho2 {
-  margin: 5% 0% 5% 10%;
-  
-}
-.imagem {
-  border: #ffd900 solid 5px;
-  width: 400px;
-}
+
 
 .laranja h1 {
-  font-size: 50px;
+  font-size: 60px;
   white-space: nowrap;
 
 }
 
 .laranja p {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .laranja button {
@@ -146,14 +190,34 @@ header {
   border-radius: 5px;
   font-size: 20px;
   margin: 2% 3% 0% 0%;
+  transition: all 0.3s ease-in-out;
 }
+
+.button-saiba-mais:hover{
+  padding: 15px;
+  font-size: 25px;
+ box-shadow: black 2px 2px 10px;
+ transform: scale(1.5s);
+}
+
 /* máquinas destaques*/
-.titulo-maquinas-destaques{
-  margin: 0% 10% 5% 10%;
-  background-color: #ffd900;
-  border-radius: 30px;
-  padding: 5px;
+
+.titulo-destaques{
+  margin: 3% 16% 3% 20%;
+  color: #ffd900;
+  border-radius: 0px;
+  padding: 25px;
   text-align: center;
+  font-size: 60px;
+  text-shadow: black 4px 4px 10px;
+  transition: all 0.1s ease-out;
+  transition: all 0.3s ease-in-out;
+}
+.titulo-destaques:hover {
+  border-bottom: 2px solid #ffd900;
+  text-shadow: rgb(0, 0, 0) 8px 8px 10px;
+  font-size: 65px;
+  transform: scale(1.5s);
 }
 .container-cards {
   display: flex; /* Faz os cards ficarem lado a lado */
@@ -161,45 +225,60 @@ header {
   gap: 20px; /* Espaço entre os cards */
   margin: 20px; /* Margem ao redor */
   flex-wrap: wrap; /* Se não couber, empilha (para mobile) */
+  
 }
 
 .maquinas-destaques {
-  flex: 1; /* Cada card ocupa o mesmo espaço */
-  max-width: 300px; /* Tamanho máximo do card */
-  min-width: 200px; /* Tamanho mínimo do card */
-  background-color: #ffd900;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  margin: 2%;
+  flex: 1;
+  max-width: 300px; /* Tamanho máximo */
+  min-width: 200px; /* Tamanho mínimo */
+  background-color: #171716;
   padding: 2%;
+  margin: 2%;
+  border-radius: 8px;
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, padding 0.3s ease-in-out; /* Adiciona transição */
+  cursor: pointer; 
 }
+
+.maquinas-destaques:hover {
+ 
+
+  transform: scale(1.05); 
+  padding: 3%; 
+  margin: 2%;
+  box-shadow:2px 15px 20px rgba(255, 225, 0, 0.5);
+}
+
 .maquinas-destaques h2 {
   text-align: center;
   font-size: 250%;
-  background-color:  rgb(44, 38, 38);
-  border-radius: 30px;
-  color: #ffd900;
+  
+  color: #ffd904;
 }
 
 .imagem-maquina {
-   padding: 4px 4px 4px 4px;
-  
-  
-}
-.maquinas-destaques img{
  
-  border-radius: 5px;
-  border: 2px solid black;
-  display: flex; /* Transforma em uma caixa flexível */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  max-width: 100%; /* Nunca vai ser maior que o card */
-  height: auto; /* Mantém a proporção */
-  border-radius: 8px; /* Cantos arredondados (opcional) */
-
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 10px; 
+  transition: transform 0.3s ease-in-out; 
 }
+
+.imagem-maquina img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; 
+  display: block; 
+ 
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.maquinas-destaques:hover .imagem-maquina img {
+    transform: scale(1.1); }
+    
 .maquinas-destaques p {
   text-align: center;
   background-color:  rgb(44, 38, 38);
@@ -213,6 +292,9 @@ header {
   max-width: 100%;
 }
 
+.descrição {
+ color:#ffd904
+}
 .maquinas-destaques button {
   margin: 3% 30% 3%;
   background-color: rgb(44, 38, 38);
@@ -643,4 +725,95 @@ header {
   .btn-primary, .btn-secondary {
     width: 200px;
   }
+}
+/* Estilos para o Rodapé */
+footer {
+  background-color: #171716; /* Cor escura que combina com os cards */
+  color: #ffd900; /* Cor do texto amarela/ouro */
+  padding: 40px 0; /* Espaçamento interno (topo/baixo, esquerda/direita) */
+  margin-top: 50px; /* Espaço entre o conteúdo principal e o rodapé */
+  font-family: 'Arial', sans-serif; /* Fonte padrão para o rodapé */
+}
+
+.container-rodape {
+  display: flex;
+  justify-content: space-around; /* Espalha as seções do rodapé */
+  align-items: flex-start; /* Alinha o conteúdo no topo */
+  flex-wrap: wrap; /* Permite que as seções empilhem em telas menores */
+  max-width: 1200px; /* Largura máxima para o conteúdo do rodapé */
+  margin: 0 auto; /* Centraliza o container do rodapé */
+  padding: 0 20px; /* Espaçamento lateral para evitar que o conteúdo toque as bordas */
+}
+
+.secao-rodape {
+  flex: 1; /* Cada seção ocupa espaço igual */
+  min-width: 200px; /* Largura mínima para as seções */
+  margin: 10px 20px; /* Margem entre as seções */
+}
+
+.secao-rodape h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffd900; /* Cor mais forte para os títulos */
+  border-bottom: 2px solid #ffd900; /* Sublinhado nos títulos */
+  padding-bottom: 10px;
+}
+
+.secao-rodape p, .secao-rodape ul {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  list-style: none; /* Remove marcadores de lista padrão */
+  padding: 0;
+  margin: 0;
+}
+
+.secao-rodape ul li {
+  margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+.secao-rodape ul li a {
+  color: #ffd900; /* Cor dos links no rodapé */
+  text-decoration: none; /* Remove sublinhado padrão */
+  transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+.secao-rodape ul li a:hover {
+  color: #fff; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+.secao-rodape a {
+  color: #ffd900;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.secao-rodape a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 15px; /* Espaço entre os ícones de redes sociais */
+  margin-top: 15px;
+}
+
+.redes-sociais a {
+  font-size: 1.5rem; /* Tamanho dos ícones */
+  color: #ffd900;
+  transition: color 0.3s ease;
+}
+
+.redes-sociais a:hover {
+  color: #fff;
+}
+
+.direitos-reservados {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 217, 0, 0.2); /* Linha divisória sutil */
+  font-size: 0.85rem;
+  color: rgba(255, 217, 0, 0.7); /* Cor mais suave para os direitos reservados */
 }
