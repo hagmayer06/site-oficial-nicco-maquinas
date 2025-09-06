@@ -19,7 +19,7 @@ header {
   display: flex;
   align-items: center;
 }
-
+/*menu cabeçalho*/
 .nav-list {
   display: flex;
   align-items: center;
@@ -36,6 +36,28 @@ header {
 }
 
 .nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ffd900;
+}
+
+/*menu máquinas*/
+.nav-list2 {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-list2 ul {
+  display: flex;
+  align-content: center;
+}
+
+.nav-item2 {
+  margin: 0 15px;
+}
+
+.nav-link2 {
   text-decoration: none;
   font-size: 1rem;
   color: #ffd900;
@@ -107,4 +129,94 @@ header {
   .open {
     display: block;
   }
+}
+.menu-maquinas {
+  
+  margin: 5% 10% 5% 10%;
+  background-color: rgb(44, 38, 38);
+  border-radius: 30px;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+
+
+.container-cards {
+  display: flex; /* Faz os cards ficarem lado a lado */
+  justify-content: space-around; /* Espalha eles na tela */
+  gap: 20px; /* Espaço entre os cards */
+  margin: 20px; /* Margem ao redor */
+  flex-wrap: wrap; /* Se não couber, empilha (para mobile) */
+}
+.maquinas-destaques {
+  flex: 1; /* Cada card ocupa o mesmo espaço */
+  max-width: 300px; /* Tamanho máximo do card */
+  min-width: 200px; /* Tamanho mínimo do card */
+}
+.maquinas-destaques {
+  background-color: #ffd900;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin: 2%;
+  padding: 2%;
+}
+.maquinas-destaques h2 {
+  text-align: center;
+  font-size: 250%;
+  background-color:  rgb(44, 38, 38);
+  border-radius: 30px;
+  color: #ffd900;
+}
+
+.imagem-maquina {
+   padding: 4px 4px 4px 4px;
+  
+  
+}
+.maquinas-destaques img{
+ 
+  border-radius: 5px;
+  border: 2px solid black;
+  display: flex; /* Transforma em uma caixa flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  max-width: 100%; /* Nunca vai ser maior que o card */
+  height: auto; /* Mantém a proporção */
+  border-radius: 8px; /* Cantos arredondados (opcional) */
+
+}
+.maquinas-destaques p {
+  text-align: center;
+  background-color:  rgb(44, 38, 38);
+  border-radius: 30px;
+  padding: 2px;
+  color: #ffd900;
+  margin: 2px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+
+}
+
+.maquinas-destaques button {
+  margin: 3% 30% 3%;
+  background-color: rgb(44, 38, 38);
+  color: #ffd900;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  text-decoration: none;
+}
+.titulo-maquinas-destaques{
+  margin: 5% 10% 5% 10%;
+  background-color: #ffd900;
+  border-radius: 30px;
+  padding: 5px;
+  text-align: center;
 }
