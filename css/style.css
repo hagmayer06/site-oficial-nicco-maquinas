@@ -14,13 +14,14 @@ header {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 6rem;
+  padding: 0.0rem 6rem;
   align-items: center;
 }
 
 .logo {
   display: flex;
   align-items: center;
+ 
 }
 
 .nav-list {
@@ -40,7 +41,7 @@ header {
 
 .nav-link {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #ffd900;
   transition: all 0.1s ease-out;
   transition: all 0.3s ease-in-out;
@@ -48,7 +49,7 @@ header {
 .nav-link:hover {
   border-bottom: 2px solid #ffd900;;
   text-shadow: rgb(0, 0, 0) 6px 6px 8px;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   transform: scale(1.5s);
 }
 
@@ -155,8 +156,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;     
     background-position: center; 
-    height: 800px;            
-    width: 1351px;   
+    height: 700px;            
+    width: 100%;   
     box-shadow: black 10px 10px 30px;            
   }
 .azul {
@@ -232,7 +233,7 @@ header {
   flex: 1;
   max-width: 300px; /* Tamanho máximo */
   min-width: 200px; /* Tamanho mínimo */
-  background-color: #171716;
+  background-color: #171717;
   padding: 2%;
   margin: 2%;
   border-radius: 8px;
@@ -247,7 +248,7 @@ header {
   transform: scale(1.05); 
   padding: 3%; 
   margin: 2%;
-  box-shadow:2px 15px 20px rgba(255, 225, 0, 0.5);
+  box-shadow:8px 8px 20px #ffae00;
 }
 
 .maquinas-destaques h2 {
@@ -290,10 +291,13 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  box-shadow: rgb(0, 0, 0) 2px 2px 5px ;
 }
 
 .descrição {
- color:#ffd904
+ color:#ffd904;
+ margin: 12px 3px 3px 3px 
+ 
 }
 .maquinas-destaques button {
   margin: 3% 30% 3%;
@@ -306,6 +310,14 @@ header {
   align-items: center;
   max-width: 100%;
   text-decoration: none;
+  transition: all 1s ease-in-out;
+}
+.maquinas-destaques button:hover {
+  padding: 20px;
+  font-size: 20px;
+  margin: 3% 20% 3% 15%;
+  transform: scale(1.5s);
+
 }
 
 @media screen and (max-width: 1043px) {
@@ -778,7 +790,7 @@ footer {
 }
 
 .secao-rodape ul li a:hover {
-  color: #fff; /* Cor ao passar o mouse */
+  color: #febb00; /* Cor ao passar o mouse */
   text-decoration: underline; /* Adiciona sublinhado no hover */
 }
 
@@ -789,7 +801,7 @@ footer {
 }
 
 .secao-rodape a:hover {
-  color: #fff;
+  color:  #febb00;
   text-decoration: underline;
 }
 
